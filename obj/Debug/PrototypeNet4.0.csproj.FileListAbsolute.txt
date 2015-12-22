@@ -48,6 +48,8 @@ D:\git\PrototypeNet4.0\PrototypeNet4.0\bin\PrototypeNet4.0.dll.config
 D:\git\PrototypeNet4.0\PrototypeNet4.0\bin\PrototypeNet4.0.dll
 D:\git\PrototypeNet4.0\PrototypeNet4.0\bin\PrototypeNet4.0.pdb
 D:\git\PrototypeNet4.0\PrototypeNet4.0\bin\Antlr3.Runtime.dll
+D:\git\PrototypeNet4.0\PrototypeNet4.0\bin\EntityFramework.dll
+D:\git\PrototypeNet4.0\PrototypeNet4.0\bin\EntityFramework.SqlServer.dll
 D:\git\PrototypeNet4.0\PrototypeNet4.0\bin\Microsoft.AI.Agent.Intercept.dll
 D:\git\PrototypeNet4.0\PrototypeNet4.0\bin\Microsoft.AI.DependencyCollector.dll
 D:\git\PrototypeNet4.0\PrototypeNet4.0\bin\Microsoft.AI.PerfCounterCollector.dll
@@ -67,6 +69,8 @@ D:\git\PrototypeNet4.0\PrototypeNet4.0\bin\System.Web.WebPages.dll
 D:\git\PrototypeNet4.0\PrototypeNet4.0\bin\System.Web.WebPages.Razor.dll
 D:\git\PrototypeNet4.0\PrototypeNet4.0\bin\WebGrease.dll
 D:\git\PrototypeNet4.0\PrototypeNet4.0\bin\Antlr3.Runtime.pdb
+D:\git\PrototypeNet4.0\PrototypeNet4.0\bin\EntityFramework.xml
+D:\git\PrototypeNet4.0\PrototypeNet4.0\bin\EntityFramework.SqlServer.xml
 D:\git\PrototypeNet4.0\PrototypeNet4.0\bin\Microsoft.AI.DependencyCollector.xml
 D:\git\PrototypeNet4.0\PrototypeNet4.0\bin\Microsoft.AI.ServerTelemetryChannel.xml
 D:\git\PrototypeNet4.0\PrototypeNet4.0\bin\Microsoft.AI.Web.xml
