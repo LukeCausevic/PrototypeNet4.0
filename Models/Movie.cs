@@ -17,6 +17,8 @@ namespace PrototypeNet4._0.Models
 
     public class MovieDBContext : DbContext
     {
+        //DbSet<Movie> Movies { get; set; }
 
+        public System.Data.Entity.DbSet<PrototypeNet4._0.Models.Movie> Movies { get; set; }
     }
 }
