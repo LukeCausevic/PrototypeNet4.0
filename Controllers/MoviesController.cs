@@ -6,13 +6,13 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
-using PrototypeNet4._0.Models;
+using PrototypeNet4._0;
 
 namespace PrototypeNet4._0.Controllers
 {
     public class MoviesController : Controller
     {
-        private MovieDBContext db = new MovieDBContext();
+        private MovieDataModelContainer db = new MovieDataModelContainer();
 
         // GET: Movies
         public ActionResult Index()
