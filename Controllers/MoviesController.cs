@@ -14,10 +14,24 @@ namespace PrototypeNet4._0.Controllers
     {
         private MovieDataModelContainer db = new MovieDataModelContainer();
 
-        // GET: Movies
-        public ActionResult Index()
+        [HttpPost]
+        public string Index(FormCollection fc, string searchString)
         {
-            return View(db.Movies.ToList());
+            return "<h3> From [HttpPost]Index: " + searchString + "</h3>";
+        }
+
+
+        public ActionResult Index(string searchString)
+        {
+            var movies = from m in db.Movies
+                         select m;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                movies = movies.Where(s => s.Title.Contains(searchString));
+            }
+
+            return View(movies);
         }
 
         // GET: Movies/Details/5
