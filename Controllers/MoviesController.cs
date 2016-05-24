@@ -21,12 +21,21 @@ namespace PrototypeNet4._0.Controllers
         }
 
 
-        public ActionResult Index(string searchString)
+        public ActionResult Index(string movieGenre, string searchString)
         {
             var movies = from m in db.Movies
                          select m;
 
+            var genrLst = db.Movies.Select(x => x.Genre).Distinct().ToList();
+
+            ViewBag.movieGenre = new SelectList(genrLst);
+
             if (!String.IsNullOrEmpty(searchString))
+            {
+                movies = movies.Where(s => s.Title.Contains(searchString));
+            }
+
+            if (!String.IsNullOrEmpty(movieGenre))
             {
                 movies = movies.Where(s => s.Title.Contains(searchString));
             }
@@ -60,7 +69,7 @@ namespace PrototypeNet4._0.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Title,Genre,ReleaseDate,Price")] Movie movie)
+        public ActionResult Create([Bind(Include = "Id,Title,Genre,ReleaseDate,Price,Rating")] Movie movie)
         {
             if (ModelState.IsValid)
             {
@@ -92,7 +101,7 @@ namespace PrototypeNet4._0.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Title,Genre,ReleaseDate,Price")] Movie movie)
+        public ActionResult Edit([Bind(Include = "Id,Title,Genre,ReleaseDate,Price,Rating")] Movie movie)
         {
             if (ModelState.IsValid)
             {

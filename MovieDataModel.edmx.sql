@@ -2,7 +2,7 @@
 -- --------------------------------------------------
 -- Entity Designer DDL Script for SQL Server 2005, 2008, 2012 and Azure
 -- --------------------------------------------------
--- Date Created: 01/05/2016 10:51:53
+-- Date Created: 02/02/2016 08:52:35
 -- Generated from EDMX file: D:\git\PrototypeNet4.0\PrototypeNet4.0\MovieDataModel.edmx
 -- --------------------------------------------------
 
@@ -36,7 +36,8 @@ CREATE TABLE [dbo].[Movies] (
     [Title] nvarchar(max)  NOT NULL,
     [Genre] nvarchar(max)  NOT NULL,
     [ReleaseDate] datetime  NOT NULL,
-    [Price] decimal(18,0)  NOT NULL
+    [Price] decimal(18,0)  NOT NULL,
+    [Rating] nvarchar(max)  NOT NULL
 );
 GO
 

@@ -11,18 +11,14 @@ namespace PrototypeNet4._0
 {
     using System;
     using System.Collections.Generic;
-    using System.ComponentModel.DataAnnotations;
     
     public partial class Movie
     {
         public int Id { get; set; }
         public string Title { get; set; }
         public string Genre { get; set; }
-        [Display(Name = "Release Date")]
-        [DataType(DataType.Date)]
-        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         public System.DateTime ReleaseDate { get; set; }
-        [DataType(DataType.Currency)]
         public decimal Price { get; set; }
+        public string Rating { get; set; }
     }
 }
